@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    background: black;
+    color: white;
+    opacity: .9;
+    transition: .5s;
+    min-height: 100vh;
+}
+
+/* .amazing_theme {
+    transition: 1s;
+    background: linear-gradient(#11002c, #131f38);
+} */
+
+.theme {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1  ;
+}
+
+.theme_options {
+    bottom: 60px;
+    position: fixed;
+    left: 25px;
+    display: none;
+    z-index: 1;
+}
+
+.theme_options div {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.light_theme {
+    background-color: rgb(235, 235, 235) !important;
+    color: black !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: #ffc1073a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellowgreen;
+}
+
+/* nav */
+
+.navbar-logo {
+    padding: 15px;
+    color: #FFC107;
+}
+.navbar-mainbg {
+    padding: 0px;
+}
+.nav-link {
+    text-decoration: none;
+    color: yellowgreen;
+    background-color: transparent;
+    border: 0px;
+
+}
+
+.nav-link:hover {
+    color: rgb(228, 255, 175);
+}
+
+/* .nav-link:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border:  1px solid red;
+} */
+
+#navbarSupportedContent {
+    overflow: hidden;
+    position: relative;
+}
+
+#navbarSupportedContent ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbarSupportedContent li {
+    list-style-type: none;
+    float: left;
+}
+
+    .navbar-expand-custom {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-custom .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-custom .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+
+
+@media only screen and (max-width: 700px) {
+    #background_img {
+        width: 70vw !important;
+    }
+    .nav_container {
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar {
+        background-color: black;
+    }
+
+}
+
+/* .bg_img_animation {
+    animation:  2s bg_img_animation linear;
+} */
+
+@keyframes bg_img_animation {
+    0% {
+        opacity: 0;
+    }  
+}
+
+.icon_back {
+    padding: 12px;
+    transition: 0.5s;
+}
+.icon_back:hover {
+    background-color: yellowgreen;
+}
+
+@media only screen and (min-width : 900px) {
+    .home .subtitle {
+        font-size: clamp(2vw, 60px, 10vw) !important;
+    }
+}
+
+/* background */
+
+.bg_img {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+}
+
+.bg_img #background_img {
+    width: 400px;
+    height: calc(100vh - 10vh); 
+}
+
+/* home */
+
+.subtitle {
+    font-size: clamp(2vw, 100px, 10vw)
+}
+
+.imfarooq {
+    font-size: clamp(2vw, 20px, 6vw)
+}
+
+.home .home_para {
+    font-size: clamp(1vw, 20px, 6vw);
+    opacity: .8;
+}
+
+.fa-facebook-f {
+    color: #4267B2
+}
+
+.fa-instagram {
+    color: orange;
+}
+
+.fa-twitter {
+    color: #1DA1F2
+}
+
+.fa-envelope {
+    color: white;
+}
+
+/* About */
+
+.about_me_small {
+    font-size: clamp(2vw, 20px, 6vw);
+    opacity: .5
+}
+
+.about_header {
+    font-size: clamp(2vw, 60px, 10vw);
+}
+
+.about_info {
+    font-size: clamp(1vw, 20px, 6vw);
+    opacity: .8;
+    
+}
+
+.about_skill {
+    font-size: clamp(1vw, 20px, 6vw);
+    opacity: .8;
+}
+
+
+.social_sites_in {
+    font-size: clamp(2vw, 40px, 10vw);
+    transform: scaleY(.8);
+    text-decoration: none;
+    display: block;
+}
+
+.skill_stack {
+    height: 50px;
+    width: 60px;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(221, 255, 141), #ffd588);
+    align-items: center;
+    display: flex;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 4px;
+    animation: 3s skill_stack linear infinite;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+@keyframes skill_stack {
+    0% {
+        border-radius: 20px 10px 30px 50px;
+    }
+
+    50% {
+        border-radius: 60px 50px 50px 10px;
+    }
+
+    100% {
+        border-radius: 20px 10px 30px 50px;
+    }
+}
+
+/* Education */
+
+.education_small {
+    font-size: clamp(2vw, 20px, 6vw);
+    opacity: .5;
+}
+
+.education_header {
+    font-size: clamp(2vw, 60px, 10vw)
+}
+
+/* projects */
+
+.project_small {
+    font-size: clamp(2vw, 20px, 6vw);opacity: .5;
+}
+.project_header {
+    font-size: clamp(2vw, 60px, 10vw)
+}
